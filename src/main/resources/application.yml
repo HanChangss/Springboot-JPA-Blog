@@ -15,14 +15,14 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.45.212:3306/blog?serverTimezone=Asia/Seoul
+    url: jdbc:mysql://192.168.45.64:3306/blog?serverTimezone=Asia/Seoul
     username: ThunderMail
     password: andwise
 
   jpa:
     open-in-view: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       use-new-id-generator-mappings: false
